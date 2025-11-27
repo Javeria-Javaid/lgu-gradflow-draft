@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -9,12 +9,7 @@ const Footer = () => {
                     {/* Brand */}
                     <div className="footer-brand">
                         <div className="footer-logo">
-                            <div className="footer-logo-icon">
-                                <GraduationCap size={20} />
-                            </div>
-                            <span className="footer-logo-text">
-                                LGU <span className="footer-logo-accent">GradFlow</span>
-                            </span>
+                            <img src="/lgu-gradflow-logo.png" alt="LGU GradFlow" style={{ height: '40px' }} />
                         </div>
                         <p>
                             Empowering universities with next-generation workflow automation tools. Simplifying education, one process at a time.

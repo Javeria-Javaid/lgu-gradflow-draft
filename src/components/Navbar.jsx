@@ -18,12 +18,7 @@ const Navbar = () => {
       <div className="container navbar-container">
         {/* Logo */}
         <div className="navbar-logo">
-          <div className="navbar-logo-icon">
-            <GraduationCap size={24} />
-          </div>
-          <span className="navbar-logo-text">
-            LGU <span className="navbar-logo-accent">GradFlow</span>
-          </span>
+          <img src="/lgu-gradflow-logo.png" alt="LGU GradFlow" style={{ height: '50px' }} />
         </div>
 
         {/* Desktop Menu */}
