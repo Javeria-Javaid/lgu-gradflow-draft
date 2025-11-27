@@ -70,13 +70,18 @@ const Dashboards = () => {
                             </button>
                         </div>
 
-                        <div className="dashboard-content-visual" style={{ backgroundColor: activeTab === 'student' ? '#EFF6FF' : activeTab === 'supervisor' ? '#F3E8FF' : '#ECFDF5' }}>
-                            <div className="dashboard-visual-placeholder">
-                                <span className="dashboard-visual-emoji">🖥️</span>
-                                <span className="dashboard-visual-text">
-                                    {tabs.find(t => t.id === activeTab).label} Dashboard UI
-                                </span>
-                            </div>
+                        <div className="dashboard-content-visual">
+                            <img
+                                src={`/dashboard-${activeTab}.png`}
+                                alt={`${tabs.find(t => t.id === activeTab).label} Dashboard Interface`}
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    borderRadius: 'var(--radius-md)',
+                                    boxShadow: 'var(--shadow-lg)',
+                                    border: '1px solid var(--color-neutral-200)'
+                                }}
+                            />
                         </div>
                     </div>
                 </div>

@@ -7,20 +7,17 @@ const FYPModule = () => {
             <div className="container fyp-container">
                 <div className="fyp-visual">
                     <div className="fyp-visual-bg"></div>
-                    <div className="fyp-visual-card">
-                        <div className="fyp-workflow">
-                            {[
-                                { title: "Proposal Submission", status: "Approved", statusClass: "status-approved" },
-                                { title: "Supervisor Allocation", status: "Assigned", statusClass: "status-assigned" },
-                                { title: "Mid-Term Evaluation", status: "Pending", statusClass: "status-pending" },
-                                { title: "Final Defense", status: "Locked", statusClass: "status-locked" },
-                            ].map((item, i) => (
-                                <div key={i} className="fyp-workflow-item">
-                                    <span className="fyp-workflow-title">{item.title}</span>
-                                    <span className={`fyp-workflow-status ${item.statusClass}`}>{item.status}</span>
-                                </div>
-                            ))}
-                        </div>
+                    <div className="fyp-visual-card" style={{ padding: 0, overflow: 'hidden', border: 'none', background: 'transparent', boxShadow: 'none' }}>
+                        <img
+                            src="/fyp-workflow.png"
+                            alt="FYP Workflow Process"
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                borderRadius: 'var(--radius-md)',
+                                boxShadow: 'var(--shadow-lg)'
+                            }}
+                        />
                     </div>
                 </div>
 
